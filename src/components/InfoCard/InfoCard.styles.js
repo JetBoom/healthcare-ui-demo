@@ -20,6 +20,13 @@ const styles = ({ palette, spacing, shadows, breakpoints }) => ({
     [breakpoints.down('sm')]: {
       gridColumn: 'auto / span 1!important',
     },
+
+    transform: 'scale(1)',
+    transition: '0.5s ease transform',
+    '&:hover': {
+      transform: 'scale(1.1)',
+      zIndex: 10,
+    },
   },
 })
 
