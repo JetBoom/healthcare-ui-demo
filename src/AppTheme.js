@@ -7,7 +7,7 @@ import { deepPurple, green } from '@material-ui/core/colors'
 import CssBaseline from '@material-ui/core/CssBaseline'
 
 
-const palette = {
+export const palette = {
   primary: {
     main: deepPurple[500],
   },
@@ -21,7 +21,7 @@ const palette = {
   },
 }
 
-const typography = {
+export const typography = {
   fontFamily: 'Roboto, tahoma, sans-serif',
   /*default: {
     color: palette.secondary.main,
@@ -31,7 +31,7 @@ const typography = {
   },*/
 }
 
-const mixins = {
+export const mixins = {
   flexHorizontalList: (space) => {
     space = space ?? '0.5rem'
     return {
@@ -59,7 +59,7 @@ const mixins = {
   },
 }
 
-const breakpoints = {
+export const breakpoints = {
   values: {
     xs: 0,
     sm: 600,
@@ -102,7 +102,7 @@ const breakpoints = {
   },
 }
 
-const overrides = {
+export const overrides = {
   MuiButton: {
     root: {
       textTransform: 'none',
@@ -156,16 +156,16 @@ const overrides = {
   },
 }
 
-const props = {
+export const props = {
   MuiButton: {
     variant: 'contained',
     color: 'primary',
   },
 }
 
-const spacing = (factor) => `${0.25 * factor}rem`
+export const spacing = (factor) => `${0.25 * factor}rem`
 
-const theme = createTheme({
+export const theme = createTheme({
   palette,
   overrides,
   typography,
