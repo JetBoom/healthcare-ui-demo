@@ -13,11 +13,14 @@ import SimpleNumberInfo from 'components/SimpleNumberInfo'
 import { GET } from 'util/dev'
 
 
-
 export default function OverviewPage() {
   const { palette } = useTheme()
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState({})
+  const [avgTreatmentCost, setAvgTreatmentCost] = useState(0)
+  const [totalPatients, setTotalPatients] = useState(0)
+  const [totalStaff, setTotalStaff] = useState(0)
+  const [availableCars, setAvailableCars] = useState(0)
 
   useEffect(() => {
     // useEffect can't use an async function so we call it this way.
@@ -25,14 +28,40 @@ export default function OverviewPage() {
       setLoading(true)
 
       try {
-        const response = await GET(`/testdata/overview.json`)
-        const json = await response.json()
-        console.log(json)
-        setData(json)
+        const [overviewRes, patientsRes] = await Promise.all([
+          GET(`/testdata/overview.json`),
+          GET(`/testdata/patients.json`),
+        ])
+        const overviewData = await overviewRes.json()
+        const patientsData = await patientsRes.json()
+
+        // Aggregate data from all our test json in to a data object.
+        // Totally messy, wouldn't be done like this with real data.
+        const demographics = { Male: 0, Female: 0 }
+        const departments = {}
+        let totalTreatmentCosts = 0
+        for (let person of patientsData) {
+          person.sex === 'Male' ? demographics.Male++ : demographics.Female++
+          departments[person.department] = (departments[person.department] || 0) + 1
+          totalTreatmentCosts += person.treatmentCosts
+        }
+
+        const newData = {
+          patients: patientsData,
+          overview: overviewData,
+          demographics,
+          departments,
+        }
+
+        setData(newData)
+        setAvgTreatmentCost(totalTreatmentCosts / patientsData.length)
+        setTotalPatients(patientsData.length)
+        setTotalStaff(overviewData.totalStaff)
+        setAvailableCars(overviewData.carCount)
+
+        setLoading(false)
       } catch (e) {
         console.error(`Error fetching data: ${e}`)
-      } finally {
-        setLoading(false)
       }
     }
 
@@ -62,8 +91,8 @@ export default function OverviewPage() {
         type: 'pie',
         name: 'Patients',
         data: [
-          { y: data.patients.demographics.Female, name: 'Female', color: palette.primary.main },
-          { y: data.patients.demographics.Male, name: 'Male', color: palette.secondary.main }
+          { y: data.demographics.Female, name: 'Female', color: palette.primary.main },
+          { y: data.demographics.Male, name: 'Male', color: palette.secondary.main }
         ]
       }]
     }
@@ -72,7 +101,7 @@ export default function OverviewPage() {
   const divisionChartOptions = useMemo(() => {
     if (loading) return {}
 
-    const departmentCounts = data.patients.departments
+    const departmentCounts = data.departments
     const series = []
     for (let name in departmentCounts) {
       series.push({
@@ -114,7 +143,7 @@ export default function OverviewPage() {
       <InfoCardGrid>
         <InfoCard size="sm">
           <SimpleNumberInfo
-            data={data.patients.total}
+            data={totalPatients}
             text="Total Patients"
             icon={<HotelIcon />}
             iconColor='violet'
@@ -123,8 +152,8 @@ export default function OverviewPage() {
 
         <InfoCard size="sm">
           <SimpleNumberInfo
-            data={data.staffCount}
-            text="Available Staff"
+            data={totalStaff}
+            text="Total Staff"
             icon={<GroupIcon />}
             iconColor='red'
           />
@@ -132,7 +161,7 @@ export default function OverviewPage() {
 
         <InfoCard size="sm">
           <SimpleNumberInfo
-            data={data.avgTreatmentCost}
+            data={avgTreatmentCost}
             isCurrency={true}
             text="Avg Treat. Costs"
             icon={<AccountBalanceWalletIcon />}
@@ -142,7 +171,7 @@ export default function OverviewPage() {
 
         <InfoCard size="sm">
           <SimpleNumberInfo
-            data={data.carCount}
+            data={availableCars}
             text="Available Cars"
             icon={<AirportShuttleIcon />}
             iconColor='orange'
@@ -161,7 +190,7 @@ export default function OverviewPage() {
 
         <InfoCard size="sm">
           <InfoCardHeader>
-            <InfoCardTitle>Patients by Gender</InfoCardTitle>
+            <InfoCardTitle>Patient Demographics</InfoCardTitle>
           </InfoCardHeader>
           <HighchartsReact
             highcharts={Highcharts}

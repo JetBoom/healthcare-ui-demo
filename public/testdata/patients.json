@@ -1,12 +1,387 @@
 [
   {
-    "id": 0,
-    "firstName": "John",
-    "lastName": "Smith"
+    "name": "Sierra Brown",
+    "sex": "Female",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "treatmentCosts": 2100
   },
   {
-    "id": 1,
-    "firstName": "Jane",
-    "lastName": "Doe"
+    "name": "Lawrence Eaton",
+    "sex": "Female",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "treatmentCosts": 2700
+  },
+  {
+    "name": "Jennifer Dunn",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "treatmentCosts": 1500
+  },
+  {
+    "name": "Courtney Pitts",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "treatmentCosts": 800
+  },
+  {
+    "name": "Kari Castillo",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "treatmentCosts": 900
+  },
+  {
+    "name": "Robert Johnson",
+    "sex": "Male",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "treatmentCosts": 500
+  },
+  {
+    "name": "Michael Owen",
+    "sex": "Female",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Kimberly Cruz",
+    "sex": "Female",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Laura Wheeler",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "treatmentCosts": 4000
+  },
+  {
+    "name": "Erica Chase",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "treatmentCosts": 12000
+  },
+  {
+    "name": "Paige Adams",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Gregory Hernandez",
+    "sex": "Male",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "David Foster",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Jessica Cole",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "treatmentCosts": 656
+  },
+  {
+    "name": "Belinda Johnson",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "treatmentCosts": 1440
+  },
+  {
+    "name": "Steven Rodriguez",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Daniel Garcia",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Brian Graham",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Robert Wagner",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "treatmentCosts": 6540
+  },
+  {
+    "name": "Erica Clarke",
+    "sex": "Female",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "treatmentCosts": 7546
+  },
+  {
+    "name": "Laurie Silva",
+    "sex": "Male",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 14342
+  },
+  {
+    "name": "Daniel Mcclain",
+    "sex": "Female",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "treatmentCosts": 1321
+  },
+  {
+    "name": "Roberta Morris",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "treatmentCosts": 0
+  },
+  {
+    "name": "Michael Vargas",
+    "sex": "Female",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "treatmentCosts": 6465
+  },
+  {
+    "name": "Mr. Patrick Schaefer",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "treatmentCosts": 1685
+  },
+  {
+    "name": "Shaun Greer",
+    "sex": "Male",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "treatmentCosts": 0
+  },
+  {
+    "name": "Shannon Marshall",
+    "sex": "Female",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "treatmentCosts": 6456
+  },
+  {
+    "name": "James Zhang",
+    "sex": "Female",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "treatmentCosts": 1234
+  },
+  {
+    "name": "Mindy Myers",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 4232
+  },
+  {
+    "name": "Jeffrey Rodriguez",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "treatmentCosts": 1433
+  },
+  {
+    "name": "Janice Gibbs",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Roberto Brown",
+    "sex": "Male",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Jennifer White",
+    "sex": "Female",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 1233
+  },
+  {
+    "name": "Marcus Mckay",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 7445
+  },
+  {
+    "name": "Danielle Williams",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "treatmentCosts": 4324
+  },
+  {
+    "name": "Robin Boyer",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 2313
+  },
+  {
+    "name": "Jennifer Green",
+    "sex": "Female",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "treatmentCosts": 5234
+  },
+  {
+    "name": "Roberto Keith",
+    "sex": "Male",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Robin Lee",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Kim Williams",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Regina Murphy",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Leslie Brown",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Theodore Rogers",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Stephen Floyd",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Jamie Schwartz",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Tina Randall",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Justin Williams",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Robert Rodriguez",
+    "sex": "Male",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Daniel Oliver",
+    "sex": "Male",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Taylor Ruiz",
+    "sex": "Female",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Kaitlyn Stephens",
+    "sex": "Female",
+    "department": "Neurology",
+    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "treatmentCosts": 3412
+  },
+  {
+    "name": "Laura Chapman",
+    "sex": "Male",
+    "department": "Surgery",
+    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Matthew Henson",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Anna Hart",
+    "sex": "Male",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "treatmentCosts": 2500
+  },
+  {
+    "name": "Ethan Mcdonald",
+    "sex": "Female",
+    "department": "Cardiology",
+    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "treatmentCosts": 2500
   }
 ]
