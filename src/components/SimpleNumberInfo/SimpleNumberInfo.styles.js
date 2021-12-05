@@ -1,4 +1,4 @@
-const styles = ({ spacing }) => ({
+const styles = ({ palette, spacing }) => ({
   SimpleNumberInfo: {
     display: 'flex',
     justifyContent: 'center',
@@ -7,13 +7,14 @@ const styles = ({ spacing }) => ({
   dataArea: {
     // Data
     '& > *:first-child': {
+      color: palette.primary.dark,
       fontSize: '1.5rem',
       fontWeight: 'bold',
     },
 
     // Description
     '& > *:last-child': {
-      opacity: 0.5,
+      color: palette.text.secondary,
       whiteSpace: 'nowrap',
     },
 
