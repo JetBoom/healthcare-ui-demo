@@ -1,0 +1,17 @@
+{
+  "staffCount": 394,
+  "avgTreatmentCost": 2536.00,
+  "carCount": 38,
+  "patients": {
+    "total": 3256,
+    "demographics": {
+      "Male": 2000,
+      "Female": 1256
+    },
+    "departments": {
+      "Cardiology": 247,
+      "Neurology": 164,
+      "Surgery": 86
+    }
+  }
+}
