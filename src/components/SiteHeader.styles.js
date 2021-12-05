@@ -9,9 +9,23 @@ const styles = ({ palette, spacing }) => ({
     paddingRight: spacing(12),
     borderBottom: '1px solid',
     borderBottomColor: palette.divider,
+    boxShadow: '0px 0px 8px #0001 inset',
   },
   logo: {
     verticalAlign: 'middle',
+  },
+  profileArea: {
+    display: 'flex',
+    alignItems: 'center',
+
+    '& > *:not(:last-child)': {
+      marginRight: spacing(4),
+    },
+  },
+  profilePicture: {
+  },
+  profileName: {
+    fontWeight: 'bold',
   },
 })
 

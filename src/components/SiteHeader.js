@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core'
+import { Typography, Avatar } from '@material-ui/core'
+import NotificationsIcon from '@material-ui/icons/Notifications';
 import PropTypes from 'prop-types'
 import styles from './SiteHeader.styles'
 
@@ -22,7 +23,11 @@ function SiteHeader({ classes }) {
       <a href="/" onClick={onClickLogo}>
         <img src="/hcarelogo.png" alt="Logo" className={classes.logo} />
       </a>
-      <Typography>[Current User]</Typography>
+      <div className={classes.profileArea}>
+        <NotificationsIcon />
+        <Avatar alt="" src="/testcontent/pfp7.jpg" className={classes.profilePicture} />
+        <Typography className={classes.profileName}>John Smith</Typography>
+      </div>
     </header>
   )
 }

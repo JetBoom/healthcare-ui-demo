@@ -8,6 +8,7 @@ const styles = ({ palette, spacing, breakpoints, shadows }) => ({
     justifyContent: 'space-between',
     borderRight: '1px solid',
     borderRightColor: palette.divider,
+    boxShadow: '0px 0px 8px #0001 inset',
 
     [breakpoints.down('sm')]: {
       width: '100%',
