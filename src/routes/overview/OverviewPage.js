@@ -28,12 +28,10 @@ export default function OverviewPage() {
       setLoading(true)
 
       try {
-        const [overviewRes, patientsRes] = await Promise.all([
-          GET(`/testdata/overview.json`),
-          GET(`/testdata/patients.json`),
+        const [overviewData, patientsData] = await Promise.all([
+          GET('/testdata/overview.json', 'json'),
+          GET('/testdata/patients.json', 'json'),
         ])
-        const overviewData = await overviewRes.json()
-        const patientsData = await patientsRes.json()
 
         // Aggregate data from all our test json in to a data object.
         // Totally messy, wouldn't be done like this with real data.
@@ -47,7 +45,6 @@ export default function OverviewPage() {
         }
 
         const newData = {
-          patients: patientsData,
           overview: overviewData,
           demographics,
           departments,
@@ -61,7 +58,7 @@ export default function OverviewPage() {
 
         setLoading(false)
       } catch (e) {
-        console.error(`Error fetching data: ${e}`)
+        console.error('Error fetching data', e)
       }
     }
 

@@ -7,4 +7,10 @@ const requestHeaders = {
   }
 }
 
-export const GET = (url) => fetch(url, requestHeaders)
+export const GET = async (url, returnType) => {
+  let result = await fetch(url, requestHeaders)
+  if (returnType === 'json') {
+    result = await result.json()
+  }
+  return result
+}
