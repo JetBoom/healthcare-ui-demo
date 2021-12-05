@@ -8,7 +8,7 @@ SimpleNumberInfo.propTypes = {
   classes: PropTypes.object.isRequired,
   data: PropTypes.any.isRequired,
   isCurrency: PropTypes.bool,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   icon: PropTypes.node,
   iconColor: PropTypes.string,
 }
@@ -24,16 +24,16 @@ function SimpleNumberInfo({ classes, data, isCurrency, text, icon, iconColor }) 
   }
 
   return (
-    <div className={classes.SimpleNumberInfo}>
+    <div className={classes.SimpleNumberInfo} data-testid="root">
       {icon && (
-        <div className={classes.iconArea} style={{color: iconColor || 'black'}}>
+        <div className={classes.iconArea} style={{color: iconColor || 'black'}} data-testid="iconarea">
           <div className={classes.iconBackground}></div>
           {icon}
         </div>
       )}
       <div className={classes.dataArea}>
-        <Typography>{data}</Typography>
-        <Typography>{text}</Typography>
+        <Typography data-testid="data">{data}</Typography>
+        <Typography data-testid="text">{text}</Typography>
       </div>
     </div>
   )
