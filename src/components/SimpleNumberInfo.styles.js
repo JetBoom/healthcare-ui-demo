@@ -26,6 +26,7 @@ const styles = ({ spacing }) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    marginLeft: spacing(3),
     marginRight: spacing(3),
   },
   iconBackground: {

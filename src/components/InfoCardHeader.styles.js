@@ -3,6 +3,7 @@ const styles = ({ palette, spacing }) => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    whiteSpace: 'nowrap',
     padding: spacing(4),
     paddingTop: 0,
     paddingBottom: spacing(4),
