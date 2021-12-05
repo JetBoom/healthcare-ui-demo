@@ -3,7 +3,7 @@
     "name": "Sierra Brown",
     "sex": "Female",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 2100,
     "age": 54
   },
@@ -11,7 +11,7 @@
     "name": "Lawrence Eaton",
     "sex": "Female",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 2700,
     "age": 52
   },
@@ -19,7 +19,7 @@
     "name": "Jennifer Dunn",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 1500,
     "age": 32
   },
@@ -27,7 +27,7 @@
     "name": "Courtney Pitts",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 800,
     "age": 36
   },
@@ -35,7 +35,7 @@
     "name": "Kari Castillo",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 900,
     "age": 30
   },
@@ -43,7 +43,7 @@
     "name": "Robert Johnson",
     "sex": "Male",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 500,
     "age": 46
   },
@@ -51,7 +51,7 @@
     "name": "Michael Owen",
     "sex": "Female",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
     "age": 56
   },
@@ -59,7 +59,7 @@
     "name": "Kimberly Cruz",
     "sex": "Female",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 2500,
     "age": 50
   },
@@ -67,7 +67,7 @@
     "name": "Laura Wheeler",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 4000,
     "age": 20
   },
@@ -75,7 +75,7 @@
     "name": "Erica Chase",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 12000,
     "age": 26
   },
@@ -83,7 +83,7 @@
     "name": "Paige Adams",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 2500,
     "age": 44
   },
@@ -91,7 +91,7 @@
     "name": "Gregory Hernandez",
     "sex": "Male",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 2500,
     "age": 35
   },
@@ -99,7 +99,7 @@
     "name": "David Foster",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 2500,
     "age": 32
   },
@@ -107,7 +107,7 @@
     "name": "Jessica Cole",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 656,
     "age": 25
   },
@@ -115,7 +115,7 @@
     "name": "Belinda Johnson",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 1440,
     "age": 28
   },
@@ -123,7 +123,7 @@
     "name": "Steven Rodriguez",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
     "age": 55
   },
@@ -131,7 +131,7 @@
     "name": "Daniel Garcia",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
     "age": 18
   },
@@ -139,7 +139,7 @@
     "name": "Brian Graham",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 2500,
     "age": 57
   },
@@ -147,7 +147,7 @@
     "name": "Robert Wagner",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 6540,
     "age": 19
   },
@@ -155,7 +155,7 @@
     "name": "Erica Clarke",
     "sex": "Female",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 7546,
     "age": 18
   },
@@ -163,7 +163,7 @@
     "name": "Laurie Silva",
     "sex": "Male",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 14342,
     "age": 44
   },
@@ -171,7 +171,7 @@
     "name": "Daniel Mcclain",
     "sex": "Female",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 1321,
     "age": 46
   },
@@ -179,7 +179,7 @@
     "name": "Roberta Morris",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 0,
     "age": 24
   },
@@ -187,7 +187,7 @@
     "name": "Michael Vargas",
     "sex": "Female",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 6465,
     "age": 34
   },
@@ -195,7 +195,7 @@
     "name": "Mr. Patrick Schaefer",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 1685,
     "age": 54
   },
@@ -203,7 +203,7 @@
     "name": "Shaun Greer",
     "sex": "Male",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 0,
     "age": 54
   },
@@ -211,7 +211,7 @@
     "name": "Shannon Marshall",
     "sex": "Female",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 6456,
     "age": 43
   },
@@ -219,7 +219,7 @@
     "name": "James Zhang",
     "sex": "Female",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 1234,
     "age": 33
   },
@@ -227,7 +227,7 @@
     "name": "Mindy Myers",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 4232,
     "age": 41
   },
@@ -235,7 +235,7 @@
     "name": "Jeffrey Rodriguez",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 1433,
     "age": 25
   },
@@ -243,7 +243,7 @@
     "name": "Janice Gibbs",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 2500,
     "age": 33
   },
@@ -251,7 +251,7 @@
     "name": "Roberto Brown",
     "sex": "Male",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp6.jpg",
+    "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 2500,
     "age": 43
   },
@@ -259,7 +259,7 @@
     "name": "Jennifer White",
     "sex": "Female",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 1233,
     "age": 24
   },
@@ -267,7 +267,7 @@
     "name": "Marcus Mckay",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 7445,
     "age": 31
   },
@@ -275,7 +275,7 @@
     "name": "Danielle Williams",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 4324,
     "age": 31
   },
@@ -283,7 +283,7 @@
     "name": "Robin Boyer",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2313,
     "age": 26
   },
@@ -291,7 +291,7 @@
     "name": "Jennifer Green",
     "sex": "Female",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 5234,
     "age": 42
   },
@@ -299,7 +299,7 @@
     "name": "Roberto Keith",
     "sex": "Male",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
     "age": 55
   },
@@ -307,7 +307,7 @@
     "name": "Robin Lee",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp1.jpg",
+    "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 2500,
     "age": 44
   },
@@ -315,7 +315,7 @@
     "name": "Kim Williams",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 2500,
     "age": 47
   },
@@ -323,7 +323,7 @@
     "name": "Regina Murphy",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
     "age": 26
   },
@@ -331,7 +331,7 @@
     "name": "Leslie Brown",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 2500,
     "age": 41
   },
@@ -339,7 +339,7 @@
     "name": "Theodore Rogers",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
     "age": 18
   },
@@ -347,7 +347,7 @@
     "name": "Stephen Floyd",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
     "age": 41
   },
@@ -355,7 +355,7 @@
     "name": "Jamie Schwartz",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 2500,
     "age": 57
   },
@@ -363,7 +363,7 @@
     "name": "Tina Randall",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp5.jpg",
+    "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 2500,
     "age": 52
   },
@@ -371,7 +371,7 @@
     "name": "Justin Williams",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
     "age": 27
   },
@@ -379,7 +379,7 @@
     "name": "Robert Rodriguez",
     "sex": "Male",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
     "age": 42
   },
@@ -387,7 +387,7 @@
     "name": "Daniel Oliver",
     "sex": "Male",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
     "age": 33
   },
@@ -395,7 +395,7 @@
     "name": "Taylor Ruiz",
     "sex": "Female",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
     "age": 51
   },
@@ -403,7 +403,7 @@
     "name": "Kaitlyn Stephens",
     "sex": "Female",
     "department": "Neurology",
-    "avatarUrl": "/public/testcontent/pfp4.jpg",
+    "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 3412,
     "age": 36
   },
@@ -411,7 +411,7 @@
     "name": "Laura Chapman",
     "sex": "Male",
     "department": "Surgery",
-    "avatarUrl": "/public/testcontent/pfp7.jpg",
+    "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
     "age": 38
   },
@@ -419,7 +419,7 @@
     "name": "Matthew Henson",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp2.jpg",
+    "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
     "age": 33
   },
@@ -427,7 +427,7 @@
     "name": "Anna Hart",
     "sex": "Male",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
     "age": 57
   },
@@ -435,7 +435,7 @@
     "name": "Ethan Mcdonald",
     "sex": "Female",
     "department": "Cardiology",
-    "avatarUrl": "/public/testcontent/pfp3.jpg",
+    "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
     "age": 31
   }
