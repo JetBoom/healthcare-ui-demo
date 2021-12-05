@@ -1,17 +1,16 @@
 import { useState, useEffect, useMemo } from 'react'
-import { CircularProgress } from '@material-ui/core'
+import Highcharts from 'highcharts'
+import HighchartsReact from 'highcharts-react-official'
 import { useTheme } from '@material-ui/core/styles'
 import HotelIcon from '@material-ui/icons/Hotel'
 import GroupIcon from '@material-ui/icons/Group'
 import AirportShuttleIcon from '@material-ui/icons/AirportShuttle'
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet'
 import Page from 'components/Page'
+import Loading from 'components/Loading'
 import { InfoCard, InfoCardGrid, InfoCardHeader, InfoCardTitle } from 'components/InfoCard'
 import SimpleNumberInfo from 'components/SimpleNumberInfo'
 import { GET } from 'util/dev'
-
-import Highcharts from 'highcharts'
-import HighchartsReact from 'highcharts-react-official'
 
 
 
@@ -108,7 +107,7 @@ export default function OverviewPage() {
     }
   }, [loading]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  if (loading) return <CircularProgress />
+  if (loading) return <Loading />
 
   return (
     <Page>

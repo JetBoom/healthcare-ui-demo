@@ -1,7 +1,7 @@
 import Page from 'components/Page'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { CircularProgress } from '@material-ui/core'
+import Loading from 'components/Loading'
 
 
 export default function PatientPage() {
@@ -33,7 +33,7 @@ export default function PatientPage() {
     fetchRecords()
   }, [patientId]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  if (loading) return <CircularProgress />
+  if (loading) return <Loading />
 
   return (
     <Page>
