@@ -7,8 +7,8 @@ import { DoctorsListPage } from 'routes/doctors'
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital'
 import { DepartmentsListPage } from 'routes/departments'
 import HomeIcon from '@material-ui/icons/Home'
-import { SettingsPage } from 'routes/settings'
-import SettingsIcon from '@material-ui/icons/Settings'
+/*import { SettingsPage } from 'routes/settings'
+import SettingsIcon from '@material-ui/icons/Settings'*/
 import { ErrorPage } from 'routes/error'
 
 
@@ -41,13 +41,13 @@ const RouteList = [
     element: DepartmentsListPage,
     icon: HomeIcon,
   },
-  {
+  /*{
     mainNavName: 'Settings',
     path: '/settings',
     exact: true,
     element: SettingsPage,
     icon: SettingsIcon,
-  },
+  },*/
   {
     path: 'patients/:patientId',
     element: PatientPage,
@@ -66,7 +66,7 @@ function MainRouter() {
         />
       ))}
 
-      <Route path="*" element={<ErrorPage code={404} message="Not found" />} />*/
+      <Route path="*" element={<ErrorPage code={404} message="Not found" />} />
     </Routes>
   )
 }
