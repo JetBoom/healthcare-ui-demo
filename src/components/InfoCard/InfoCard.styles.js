@@ -3,7 +3,9 @@ const styles = ({ palette, spacing, shadows, breakpoints }) => ({
     overflowX: 'hidden',
     backgroundColor: palette.background.paper,
     borderRadius: '8px',
-    boxShadow: shadows[1],
+    boxShadow: shadows[2],
+    border: '1px solid',
+    borderColor: palette.divider,
     padding: `${spacing(6)} ${spacing(2)}`,
 
     '&[data-size="xl"]': { gridColumn: 'auto / span 4' },
@@ -22,10 +24,11 @@ const styles = ({ palette, spacing, shadows, breakpoints }) => ({
     },
 
     transform: 'scale(1)',
-    transition: '0.5s ease transform',
+    transition: '0.5s ease all',
     '&:hover': {
-      transform: 'scale(1.1)',
+      transform: 'scale(1.05)',
       zIndex: 10,
+      borderColor: palette.primary.dark,
     },
   },
 })
