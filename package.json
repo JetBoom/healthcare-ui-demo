@@ -18,12 +18,14 @@
     "moment": "^2.29.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
+    "react-data-table-component": "^7.4.5",
     "react-dom": "^17.0.2",
     "react-fast-compare": "^3.2.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "sass": "^1.43.4",
+    "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
