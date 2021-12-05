@@ -140,8 +140,8 @@ const overrides = {
       button: {
         fontFamily: typography.fontFamily,
       },
-      /*'*::-webkit-scrollbar': {
-        width: 8,
+      '*::-webkit-scrollbar': {
+        width: 6,
       },
       '*::-webkit-scrollbar-track': {
         background: palette.primary.dark,
@@ -151,7 +151,7 @@ const overrides = {
       },
       '*::-webkit-scrollbar-thumb:hover': {
         background: palette.primary.light,
-      },*/
+      },
     },
   },
 }
