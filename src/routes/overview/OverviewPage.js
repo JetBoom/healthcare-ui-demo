@@ -71,11 +71,7 @@ export default function OverviewPage() {
         ]
       }]
     }
-  }, [
-    loading,
-    data?.patients?.demographics?.Male,
-    data?.patients?.demographics?.Female,
-  ])
+  }, [loading]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const divisionChartOptions = useMemo(() => {
     if (loading) return {}
@@ -113,10 +109,7 @@ export default function OverviewPage() {
       },
       series,
     }
-  }, [
-    loading,
-    data?.patients?.departments,
-  ])
+  }, [loading]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (loading) return <CircularProgress />
 
