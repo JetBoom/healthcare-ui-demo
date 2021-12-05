@@ -11,7 +11,7 @@ export default function App() {
     <AppTheme>
       <BrowserRouter>
         <SiteHeader />
-        <main>
+        <main data-testid="main">
           <NavigationMenu />
           <MainRouter />
         </main>
