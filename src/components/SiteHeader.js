@@ -20,7 +20,7 @@ function SiteHeader({ classes }) {
   return (
     <header className={classes.root}>
       <a href="/" onClick={onClickLogo}>
-        <img src="/hcarelogo.png" alt="Logo" />
+        <img src="/hcarelogo.png" alt="Logo" className={classes.logo} />
       </a>
       <Typography>[Current User]</Typography>
     </header>

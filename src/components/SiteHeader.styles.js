@@ -10,6 +10,9 @@ const styles = ({ palette, spacing }) => ({
     borderBottom: '1px solid',
     borderBottomColor: palette.divider,
   },
+  logo: {
+    verticalAlign: 'middle',
+  },
 })
 
 export default styles
