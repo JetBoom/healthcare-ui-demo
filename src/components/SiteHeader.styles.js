@@ -1,4 +1,4 @@
-const styles = ({ palette, spacing }) => ({
+const styles = ({ palette, breakpoints, spacing }) => ({
   root: {
     // See App.scss for sizing
     display: 'flex',
@@ -10,6 +10,11 @@ const styles = ({ palette, spacing }) => ({
     borderBottom: '1px solid',
     borderBottomColor: palette.divider,
     boxShadow: '0px 0px 8px #0001 inset',
+
+    [breakpoints.down('md')]: {
+      paddingLeft: spacing(2),
+      paddingRight: spacing(2),
+    },
   },
   logo: {
     verticalAlign: 'middle',
