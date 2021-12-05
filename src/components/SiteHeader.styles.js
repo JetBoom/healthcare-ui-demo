@@ -1,6 +1,6 @@
 const styles = ({ palette, spacing }) => ({
   root: {
-    minHeight: '4rem',
+    // See App.scss for sizing
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
