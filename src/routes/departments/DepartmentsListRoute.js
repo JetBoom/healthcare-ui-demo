@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import DepartmentsListPage from 'pages/DepartmentsListPage'
+import { DepartmentsListPage } from 'pages/departments'
 import Loading from 'components/Loading'
 import { GET } from 'util/dev'
 
