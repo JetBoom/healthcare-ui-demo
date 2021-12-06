@@ -16,10 +16,11 @@ import { GET } from 'util/dev'
 export default function OverviewPage() {
   const { palette } = useTheme()
   const [loading, setLoading] = useState(true)
-  const [data, setData] = useState({})
+  const [demographics, setDemographics] = useState({ Male: 0, Female: 0 })
+  const [departments, setDepartments] = useState({})
   const [avgTreatmentCost, setAvgTreatmentCost] = useState(0)
   const [totalPatients, setTotalPatients] = useState(0)
-  const [totalStaff, setTotalStaff] = useState(0)
+  const [totalDoctors, setTotalDoctors] = useState(0)
   const [availableCars, setAvailableCars] = useState(0)
 
   useEffect(() => {
@@ -28,33 +29,29 @@ export default function OverviewPage() {
       setLoading(true)
 
       try {
-        const [overviewData, patientsData] = await Promise.all([
-          GET('/testdata/overview.json', 'json'),
+        const [patientsData, doctorsData, carData] = await Promise.all([
           GET('/testdata/patients.json', 'json'),
+          GET('/testdata/doctors.json', 'json'),
+          GET('/testdata/cars.json', 'json'),
         ])
 
         // Aggregate data from all our test json in to a data object.
         // Totally messy, wouldn't be done like this with real data.
-        const demographics = { Male: 0, Female: 0 }
-        const departments = {}
+        const newDemographics = { Male: 0, Female: 0 }
+        const newDepartments = {}
         let totalTreatmentCosts = 0
         for (let person of patientsData) {
-          person.sex === 'Male' ? demographics.Male++ : demographics.Female++
-          departments[person.department] = (departments[person.department] || 0) + 1
+          person.sex === 'Male' ? newDemographics.Male++ : newDemographics.Female++
+          newDepartments[person.department] = (newDepartments[person.department] || 0) + 1
           totalTreatmentCosts += person.treatmentCosts
         }
 
-        const newData = {
-          overview: overviewData,
-          demographics,
-          departments,
-        }
-
-        setData(newData)
         setAvgTreatmentCost(totalTreatmentCosts / patientsData.length)
         setTotalPatients(patientsData.length)
-        setTotalStaff(overviewData.totalStaff)
-        setAvailableCars(overviewData.carCount)
+        setTotalDoctors(doctorsData.length)
+        setAvailableCars(carData.carCount)
+        setDemographics(newDemographics)
+        setDepartments(newDepartments)
 
         setLoading(false)
       } catch (e) {
@@ -88,17 +85,17 @@ export default function OverviewPage() {
         type: 'pie',
         name: 'Patients',
         data: [
-          { y: data.demographics.Female, name: 'Female', color: palette.primary.main },
-          { y: data.demographics.Male, name: 'Male', color: palette.secondary.main }
+          { y: demographics.Female, name: 'Female', color: palette.primary.main },
+          { y: demographics.Male, name: 'Male', color: palette.secondary.main }
         ]
       }]
     }
-  }, [loading]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [loading, demographics]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const divisionChartOptions = useMemo(() => {
     if (loading) return {}
 
-    const departmentCounts = data.departments
+    const departmentCounts = departments
     const series = []
     for (let name in departmentCounts) {
       series.push({
@@ -149,8 +146,8 @@ export default function OverviewPage() {
 
         <InfoCard size="sm">
           <SimpleNumberInfo
-            data={totalStaff}
-            text="Total Staff"
+            data={totalDoctors}
+            text="Total Doctors"
             icon={<GroupIcon />}
             iconColor='red'
           />
