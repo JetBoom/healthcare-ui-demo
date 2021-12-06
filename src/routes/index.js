@@ -9,7 +9,7 @@ import { DepartmentsListRoute } from 'routes/departments'
 import HomeIcon from '@material-ui/icons/Home'
 /*import { SettingsPage } from 'routes/settings'
 import SettingsIcon from '@material-ui/icons/Settings'*/
-import { ErrorPage } from 'routes/error'
+import { ErrorPage } from 'pages/error'
 
 
 const RouteList = [
