@@ -4,25 +4,33 @@ Simple React + HTML + CSS + MUIv4 app created as a bit of a showcase.
 
 Key technology used: React, HTML/CSS, MUI (v4), Highcharts
 
-## Running
-
-### Requirements
+## Requirements
 
 1. Node.js (I suggest at least v14.50)
 2. npm or other JS package manager (I suggest pnpm)
 
 ### Install
 
-Run 'npm install' (or your choice of package manager)
+Run **npm install** (or with your choice of package manager)
 
-### Running
+## Running
 
-Run 'npm start'
+### Development Mode
 
-### Testing
+To run in development mode use **npm start**
 
-Run 'npm test'
+### Unit Tests
+
+To run tests use **npm test**
 
 ### Building
 
-Run 'npm build'
+Use **npm build** to build a production version.
+
+## Docs
+
+Styleguidist docs are available.
+
+1. Run **npm install --save-dev react-styleguidist**
+2. Run **npx styleguidist server**
+3. Docs will be available at http://localhost:6060
