@@ -10,7 +10,7 @@ Loading.propTypes = {
 
 function Loading({ classes }) {
   return (
-    <div className={classes.root}>
+    <div className={classes.root} data-testid="loading">
       <CircularProgress className={classes.progress} />
     </div>
   )

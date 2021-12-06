@@ -5,7 +5,7 @@ import { Button } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import HelpIcon from '@material-ui/icons/Help'
 import AddIcon from '@material-ui/icons/Add'
-import NavigationButton from 'components/NavigationButton'
+import NavigationButton from './NavigationButton'
 import styles from './NavigationMenu.styles'
 
 
