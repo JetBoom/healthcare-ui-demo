@@ -16,8 +16,8 @@ describe('<SimpleCardInfo>', () => {
   })
 
   test('it renders currency properly', () => {
-    render(<SimpleCardInfo data={1000} isCurrency={true} />)
+    render(<SimpleCardInfo data={12345.67} isCurrency={true} />)
 
-    expect(screen.getByTestId('data')).toHaveTextContent('$1,000.00')
+    expect(screen.getByTestId('data')).toHaveTextContent('$12,345.67')
   })
 })
