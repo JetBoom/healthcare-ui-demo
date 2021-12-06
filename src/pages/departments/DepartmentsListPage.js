@@ -5,9 +5,14 @@ import DataTable from 'components/DataTable'
 
 
 DepartmentsListPage.propTypes = {
+  /** List of department objects. */
   departments: PropTypes.array.isRequired,
 }
 
+
+/**
+ * Page that displays all of the departments on the site.
+ */
 export default function DepartmentsListPage({ departments }) {
   const columns = useMemo(() => ([
     {

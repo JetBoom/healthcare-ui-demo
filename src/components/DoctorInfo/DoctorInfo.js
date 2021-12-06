@@ -14,6 +14,9 @@ DoctorInfo.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
+/**
+ * Displays info about a given **doctor**.
+ */
 function DoctorInfo({ classes, doctor }) {
   return (
     <div className={classes.root} data-testid="doctorinfo">

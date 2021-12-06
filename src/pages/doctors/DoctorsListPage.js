@@ -5,9 +5,13 @@ import DoctorInfo from 'components/DoctorInfo'
 
 
 DoctorsListPage.propTypes = {
+  /** List of doctor objects. */
   doctors: PropTypes.array.isRequired,
 }
 
+/**
+ * Page that displays all the doctors on the site.
+ */
 export default function DoctorsListPage({ doctors }) {
   return (
     <Page>

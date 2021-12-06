@@ -13,6 +13,11 @@ NavigationMenu.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
+/**
+ * The site navigation menu.
+ *
+ * Contains all the routes that have a mainNavName. Highlights current route.
+*/
 function NavigationMenu({ classes }) {
   const navigate = useNavigate()
   const location = useLocation()

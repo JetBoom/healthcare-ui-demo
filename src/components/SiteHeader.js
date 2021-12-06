@@ -10,6 +10,10 @@ SiteHeader.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
+
+/**
+ * Fixed header for the app. Contains our logo and current logged in user info.
+ */ 
 function SiteHeader({ classes }) {
   const navigate = useNavigate()
 

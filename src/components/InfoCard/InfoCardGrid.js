@@ -7,6 +7,10 @@ InfoCardGrid.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
+/**
+ * Automatically arranges InfoCard components in a grid.
+ * Is also responsive to screen size changes.
+*/
 function InfoCardGrid({ classes, children }) {
   return (
     <div className={classes.InfoCardGrid}>

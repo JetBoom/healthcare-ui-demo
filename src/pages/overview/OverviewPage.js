@@ -13,14 +13,21 @@ import SimpleCardInfo from 'components/SimpleCardInfo'
 
 
 OverviewPage.propTypes = {
+  /** Demographics object */
   demographics: PropTypes.object.isRequired,
+  /** Departments object */
   departments: PropTypes.object.isRequired,
+  /** Average treatment cost of all patients. */
   avgTreatmentCost: PropTypes.number.isRequired,
   totalPatients: PropTypes.number.isRequired,
   totalDoctors: PropTypes.number.isRequired,
+  /** Number of cars we have ready to go. */
   availableCars: PropTypes.number.isRequired,
 }
 
+/**
+ * Page that displays aggregate data and some charts.
+ */
 export default function OverviewPage(props) {
   const {
     demographics,

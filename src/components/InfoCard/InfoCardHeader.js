@@ -7,6 +7,9 @@ InfoCardHeader.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
+/**
+ * A styled header to put inside an InfoCard.
+*/
 function InfoCardHeader({ classes, children }) {
   return (
     <div className={classes.InfoCardHeader}>

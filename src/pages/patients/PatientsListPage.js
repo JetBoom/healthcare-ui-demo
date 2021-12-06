@@ -11,6 +11,9 @@ PatientsListPage.propTypes = {
   patients: PropTypes.array.isRequired,
 }
 
+/**
+ * Page that displays info about all patients in a list.
+ */
 export default function PatientsListPage({ patients }) {
   const navigate = useNavigate()
 

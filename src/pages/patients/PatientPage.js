@@ -18,6 +18,9 @@ PatientPage.propTypes = {
   }).isRequired,
 }
 
+/**
+ * Page that displays info about a specific patient.
+ */
 export default function PatientPage({ patient }) {
   return (
     <Page>

@@ -8,6 +8,10 @@ Loading.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
+/**
+ * A full screen (sans navigation menu) loading spinner.
+ * Automatically sizes itself to fit the screen in a nice way.
+*/
 function Loading({ classes }) {
   return (
     <div className={classes.root} data-testid="loading">
