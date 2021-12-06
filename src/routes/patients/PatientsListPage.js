@@ -60,6 +60,12 @@ export default function PatientsListPage() {
       right: true,
     },
     {
+      name: 'Department',
+      selector: (row) => row.department,
+      sortable: true,
+      right: true,
+    },
+    {
       name: 'Treatment Costs',
       selector: (row) => row.treatmentCosts,
       format: (row) => row.treatmentCosts.toLocaleString('en-US', {style: 'currency', currency: 'USD'}),
@@ -75,6 +81,7 @@ export default function PatientsListPage() {
       <div style={{width: '100%'}}>
         <DataTable
           title="All Patients"
+          pagination={true}
           data={patients}
           columns={columns}
         />
