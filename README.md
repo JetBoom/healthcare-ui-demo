@@ -13,8 +13,16 @@ Key technology used: React, HTML/CSS, MUI (v4), Highcharts
 
 ### Install
 
-Run 'pnpm install' (or your choice of package manager)
+Run 'npm install' (or your choice of package manager)
 
 ### Running
 
-Run 'pnpm start' (or your choice of package manager)
+Run 'npm start'
+
+### Testing
+
+Run 'npm test'
+
+### Building
+
+Run 'npm build'
