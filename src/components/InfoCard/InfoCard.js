@@ -5,7 +5,8 @@ import styles from './InfoCard.styles'
 
 InfoCard.propTypes = {
   classes: PropTypes.object.isRequired,
-  size: PropTypes.string,
+  size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']).isRequired,
+  noEffects: PropTypes.bool,
 }
 
 InfoCard.defaultProps = {
@@ -15,9 +16,9 @@ InfoCard.defaultProps = {
 /**
  * Base component to display info or data points in a grid.
 */
-function InfoCard({ classes, children, size }) {
+function InfoCard({ classes, children, size, noEffects }) {
   return (
-    <section className={classes.InfoCard} data-size={size}>
+    <section className={classes.InfoCard} data-size={size} data-noeffects={noEffects ? 1 : 0}>
       {children}
     </section>
   )

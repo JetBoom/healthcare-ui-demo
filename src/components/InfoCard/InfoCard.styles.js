@@ -25,7 +25,7 @@ const styles = ({ palette, spacing, shadows, breakpoints }) => ({
 
     transform: 'scale(1)',
     transition: '0.5s ease all',
-    '&:hover': {
+    '&[data-noeffects="0"]:hover': {
       transform: 'scale(1.05)',
       zIndex: 10,
       borderColor: palette.primary.dark,
