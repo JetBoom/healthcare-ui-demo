@@ -22,13 +22,7 @@ export const palette = {
 }
 
 export const typography = {
-  fontFamily: 'Roboto, tahoma, sans-serif',
-  /*default: {
-    color: palette.secondary.main,
-  },
-  body2: {
-    color: palette.secondary.main,
-  },*/
+  fontFamily: "'Roboto', 'Ubuntu', tahoma, sans-serif",
 }
 
 export const mixins = {
