@@ -1,7 +1,7 @@
-import DepartmentsListPage from './DepartmentsListPage'
+import DepartmentsListRoute from './DepartmentsListRoute'
 
 
-export default DepartmentsListPage
+export default DepartmentsListRoute
 export {
-  DepartmentsListPage,
+  DepartmentsListRoute,
 }

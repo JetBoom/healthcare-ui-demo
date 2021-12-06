@@ -24,7 +24,6 @@ export default function OverviewPage() {
   const [availableCars, setAvailableCars] = useState(0)
 
   useEffect(() => {
-    // useEffect can't use an async function so we call it this way.
     const fetchData = async () => {
       setLoading(true)
 

@@ -1,6 +1,5 @@
-import { useState, useEffect, useMemo } from 'react'
-import Page from 'components/Page'
-import DataTable from 'components/DataTable'
+import { useState, useEffect } from 'react'
+import DepartmentsListPage from 'pages/DepartmentsListPage'
 import Loading from 'components/Loading'
 import { GET } from 'util/dev'
 
@@ -40,12 +39,11 @@ function aggregateDepartmentData(patientsData, doctorsData) {
   return newDepartments
 }
 
-export default function DepartmentsListPage() {
+export default function DepartmentsListRoute() {
   const [loading, setLoading] = useState(true)
   const [departments, setDepartments] = useState([])
 
   useEffect(() => {
-    // useEffect can't use an async function so we call it this way.
     const fetchData = async () => {
       setLoading(true)
 
@@ -66,44 +64,7 @@ export default function DepartmentsListPage() {
     fetchData()
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
-  const columns = useMemo(() => ([
-    {
-      name: 'Name',
-      selector: (row) => row.name,
-      sortable: true,
-      grow: 2,
-    },
-    {
-      name: 'Num. Patients',
-      selector: (row) => row.patientCount,
-      sortable: true,
-    },
-    {
-      name: 'Num. Doctors',
-      selector: (row) => row.doctorCount,
-      sortable: true,
-      right: true,
-    },
-    {
-      name: 'Total Treatment Costs',
-      selector: (row) => row.totalTreatmentCosts,
-      format: (row) => row.totalTreatmentCosts.toLocaleString('en-US', {style: 'currency', currency: 'USD'}),
-      sortable: true,
-      right: true,
-    },
-  ]), []) // eslint-disable-line react-hooks/exhaustive-deps
-
   if (loading) return <Loading />
 
-  return (
-    <Page>
-      <div style={{width: '100%'}}>
-        <DataTable
-          title="Departments"
-          data={departments}
-          columns={columns}
-        />
-      </div>
-    </Page>
-  )
+  return <DepartmentsListPage departments={departments} />
 }

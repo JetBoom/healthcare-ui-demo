@@ -14,7 +14,6 @@ export default function PatientsListPage() {
   const [patients, setPatients] = useState([])
 
   useEffect(() => {
-    // useEffect can't use an async function so we call it this way.
     const fetchData = async () => {
       setLoading(true)
 

@@ -5,7 +5,7 @@ import { PatientsListPage, PatientPage } from 'routes/patients'
 import PeopleIcon from '@material-ui/icons/People'
 import { DoctorsListPage } from 'routes/doctors'
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital'
-import { DepartmentsListPage } from 'routes/departments'
+import { DepartmentsListRoute } from 'routes/departments'
 import HomeIcon from '@material-ui/icons/Home'
 /*import { SettingsPage } from 'routes/settings'
 import SettingsIcon from '@material-ui/icons/Settings'*/
@@ -38,7 +38,7 @@ const RouteList = [
     mainNavName: 'Departments',
     path: '/departments',
     exact: true,
-    element: DepartmentsListPage,
+    element: DepartmentsListRoute,
     icon: HomeIcon,
   },
   /*{
