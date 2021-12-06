@@ -21,18 +21,18 @@ const RouteList = [
     icon: BarChartIcon,
   },
   {
-    mainNavName: 'Patients',
-    path: '/patients',
-    exact: true,
-    element: PatientsListPage,
-    icon: PeopleIcon,
-  },
-  {
     mainNavName: 'Doctors',
     path: '/doctors',
     exact: true,
     element: DoctorsListPage,
     icon: LocalHospitalIcon,
+  },
+  {
+    mainNavName: 'Patients',
+    path: '/patients',
+    exact: true,
+    element: PatientsListPage,
+    icon: PeopleIcon,
   },
   {
     mainNavName: 'Departments',
