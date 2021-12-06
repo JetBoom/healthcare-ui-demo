@@ -6,7 +6,7 @@ import GroupIcon from '@material-ui/icons/Group'
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet'
 import Page from 'components/Page'
 import { InfoCard, InfoCardGrid } from 'components/InfoCard'
-import SimpleNumberInfo from 'components/SimpleNumberInfo'
+import SimpleCardInfo from 'components/SimpleCardInfo'
 import Loading from 'components/Loading'
 import { GET } from 'util/dev'
 
@@ -46,7 +46,7 @@ export default function PatientPage() {
     <Page>
       <InfoCardGrid>
         <InfoCard size="xl">
-          <SimpleNumberInfo
+          <SimpleCardInfo
             data={`${patient.name} (${patient.age})`}
             text="Name & Age"
             icon={<Avatar size="large" src={patient.avatarUrl} />}
@@ -55,7 +55,7 @@ export default function PatientPage() {
         </InfoCard>
 
         <InfoCard size="sm">
-          <SimpleNumberInfo
+          <SimpleCardInfo
             data={patient.sex}
             text="Sex"
             icon={<GroupIcon />}
@@ -64,7 +64,7 @@ export default function PatientPage() {
         </InfoCard>
 
         <InfoCard size="md">
-          <SimpleNumberInfo
+          <SimpleCardInfo
             data={patient.treatmentCosts}
             isCurrency={true}
             text="Total Treat. Costs"
@@ -74,7 +74,7 @@ export default function PatientPage() {
         </InfoCard>
 
         <InfoCard size="sm">
-          <SimpleNumberInfo
+          <SimpleCardInfo
             data={patient.department}
             text="Department"
             icon={<HotelIcon />}

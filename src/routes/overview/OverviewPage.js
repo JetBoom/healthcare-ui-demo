@@ -9,7 +9,7 @@ import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet'
 import Page from 'components/Page'
 import Loading from 'components/Loading'
 import { InfoCard, InfoCardGrid, InfoCardHeader, InfoCardTitle } from 'components/InfoCard'
-import SimpleNumberInfo from 'components/SimpleNumberInfo'
+import SimpleCardInfo from 'components/SimpleCardInfo'
 import { GET } from 'util/dev'
 
 
@@ -136,7 +136,7 @@ export default function OverviewPage() {
     <Page>
       <InfoCardGrid>
         <InfoCard size="sm">
-          <SimpleNumberInfo
+          <SimpleCardInfo
             data={totalPatients}
             text="Total Patients"
             icon={<HotelIcon />}
@@ -145,7 +145,7 @@ export default function OverviewPage() {
         </InfoCard>
 
         <InfoCard size="sm">
-          <SimpleNumberInfo
+          <SimpleCardInfo
             data={totalDoctors}
             text="Total Doctors"
             icon={<GroupIcon />}
@@ -154,7 +154,7 @@ export default function OverviewPage() {
         </InfoCard>
 
         <InfoCard size="sm">
-          <SimpleNumberInfo
+          <SimpleCardInfo
             data={avgTreatmentCost}
             isCurrency={true}
             text="Avg Treat. Costs"
@@ -164,7 +164,7 @@ export default function OverviewPage() {
         </InfoCard>
 
         <InfoCard size="sm">
-          <SimpleNumberInfo
+          <SimpleCardInfo
             data={availableCars}
             text="Available Cars"
             icon={<AirportShuttleIcon />}

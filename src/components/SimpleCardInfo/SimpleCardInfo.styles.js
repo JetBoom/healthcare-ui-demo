@@ -1,5 +1,5 @@
 const styles = ({ palette, spacing }) => ({
-  SimpleNumberInfo: {
+  SimpleCardInfo: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',

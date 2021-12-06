@@ -1,10 +1,10 @@
 import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 import PropTypes from 'prop-types'
-import styles from './SimpleNumberInfo.styles'
+import styles from './SimpleCardInfo.styles'
 
 
-SimpleNumberInfo.propTypes = {
+SimpleCardInfo.propTypes = {
   classes: PropTypes.object.isRequired,
   data: PropTypes.any.isRequired,
   isCurrency: PropTypes.bool,
@@ -13,7 +13,7 @@ SimpleNumberInfo.propTypes = {
   iconColor: PropTypes.string,
 }
 
-function SimpleNumberInfo({ classes, data, isCurrency, text, icon, iconColor }) {
+function SimpleCardInfo({ classes, data, isCurrency, text, icon, iconColor }) {
   if (typeof data === 'number') {
     const localeOptions = {}
     if (isCurrency) {
@@ -24,7 +24,7 @@ function SimpleNumberInfo({ classes, data, isCurrency, text, icon, iconColor }) 
   }
 
   return (
-    <div className={classes.SimpleNumberInfo} data-testid="root">
+    <div className={classes.SimpleCardInfo} data-testid="root">
       {icon && (
         <div className={classes.iconArea} style={{color: iconColor || 'black'}} data-testid="iconarea">
           <div className={classes.iconBackground}></div>
@@ -39,4 +39,4 @@ function SimpleNumberInfo({ classes, data, isCurrency, text, icon, iconColor }) 
   )
 }
 
-export default withStyles(styles)(SimpleNumberInfo)
+export default withStyles(styles)(SimpleCardInfo)
