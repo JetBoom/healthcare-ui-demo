@@ -1,47 +1,24 @@
-import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
 import { Avatar } from '@material-ui/core'
 import HotelIcon from '@material-ui/icons/Hotel'
 import GroupIcon from '@material-ui/icons/Group'
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet'
+import PropTypes from 'prop-types'
 import Page from 'components/Page'
 import { InfoCard, InfoCardGrid } from 'components/InfoCard'
 import SimpleCardInfo from 'components/SimpleCardInfo'
-import Loading from 'components/Loading'
-import { GET } from 'util/dev'
 
 
-export default function PatientPage() {
-  const { patientId } = useParams()
-  const [loading, setLoading] = useState(true)
-  const [patient, setPatient] = useState({})
+PatientPage.propTypes = {
+  patient: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    department: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    sex: PropTypes.string.isRequired,
+    treatmentCosts: PropTypes.number.isRequired,
+  }).isRequired,
+}
 
-  useEffect(() => {
-    // useEffect can't use an async function so we call it this way.
-    const fetchData = async () => {
-      setLoading(true)
-
-      try {
-        const patientsData = await GET('/testdata/patients.json', 'json')
-
-        const patientData = patientsData[patientId]
-        if (!patientData) {
-          throw new Error('Patient not found')
-        }
-
-        setPatient(patientData)
-
-        setLoading(false)
-      } catch (e) {
-        console.error(`Error fetching data: ${e}`)
-      }
-    }
-
-    fetchData()
-  }, [patientId])
-
-  if (loading) return <Loading />
-
+export default function PatientPage({ patient }) {
   return (
     <Page>
       <InfoCardGrid>

@@ -1,8 +1,8 @@
-import PatientPage from './PatientPage'
-import PatientsListPage from './PatientsListPage'
+import PatientRoute from './PatientRoute'
+import PatientsListRoute from './PatientsListRoute'
 
 
 export {
-  PatientPage,
-  PatientsListPage,
+  PatientRoute,
+  PatientsListRoute,
 }

@@ -1,7 +1,7 @@
-import DoctorsListPage from './DoctorsListPage'
+import DoctorsListRoute from './DoctorsListRoute'
 
 
-export default DoctorsListPage
+export default DoctorsListRoute
 export {
-  DoctorsListPage,
+  DoctorsListRoute,
 }

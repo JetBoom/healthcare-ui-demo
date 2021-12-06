@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react'
-import Page from 'components/Page'
 import Loading from 'components/Loading'
-import { InfoCard, InfoCardGrid } from 'components/InfoCard'
-import DoctorInfo from 'components/DoctorInfo'
+import { DoctorsListPage } from 'pages/doctors'
 import { GET } from 'util/dev'
 
 
-export default function DoctorsListPage() {
+export default function DoctorsListRoute() {
   const [loading, setLoading] = useState(true)
   const [doctors, setDoctors] = useState([])
 
@@ -30,15 +28,5 @@ export default function DoctorsListPage() {
 
   if (loading) return <Loading />
 
-  return (
-    <Page>
-      <InfoCardGrid>
-        {doctors.map((doctor, index) => (
-          <InfoCard key={index} size="xl" noEffects={true}>
-            <DoctorInfo doctor={doctor} />
-          </InfoCard>
-        ))}
-      </InfoCardGrid>
-    </Page>
-  )
+  return <DoctorsListPage doctors={doctors} />
 }

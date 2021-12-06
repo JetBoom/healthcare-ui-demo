@@ -1,7 +1,7 @@
-import OverviewPage from './OverviewPage'
+import OverviewRoute from './OverviewRoute'
 
 
-export default OverviewPage
+export default OverviewRoute
 export {
-  OverviewPage,
+  OverviewRoute,
 }

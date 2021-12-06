@@ -1,7 +1,7 @@
-import SettingsPage from './SettingsPage'
+import SettingsRoute from './SettingsRoute'
 
 
-export default SettingsPage
+export default SettingsRoute
 export {
-  SettingsPage,
+  SettingsRoute,
 }

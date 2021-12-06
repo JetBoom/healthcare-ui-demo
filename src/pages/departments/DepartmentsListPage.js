@@ -1,7 +1,12 @@
 import { useMemo } from 'react'
+import PropTypes from 'prop-types'
 import Page from 'components/Page'
 import DataTable from 'components/DataTable'
 
+
+DepartmentsListPage.propTypes = {
+  departments: PropTypes.array.isRequired,
+}
 
 export default function DepartmentsListPage({ departments }) {
   const columns = useMemo(() => ([

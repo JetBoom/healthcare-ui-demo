@@ -1,35 +1,18 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import { Avatar, IconButton } from '@material-ui/core'
 import LaunchIcon from '@material-ui/icons/Launch'
 import DataTable from 'components/DataTable'
 import Page from 'components/Page'
-import Loading from 'components/Loading'
-import { GET } from 'util/dev'
 
 
-export default function PatientsListPage() {
+PatientsListPage.propTypes = {
+  patients: PropTypes.array.isRequired,
+}
+
+export default function PatientsListPage({ patients }) {
   const navigate = useNavigate()
-  const [loading, setLoading] = useState(false)
-  const [patients, setPatients] = useState([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true)
-
-      try {
-        const patientsData = await GET('/testdata/patients.json', 'json')
-
-        setPatients(patientsData)
-
-        setLoading(false)
-      } catch (e) {
-        console.error(`Error fetching data: ${e}`)
-      }
-    }
-
-    fetchData()
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const columns = useMemo(() => ([
     {
@@ -72,8 +55,6 @@ export default function PatientsListPage() {
       right: true,
     },
   ]), []) // eslint-disable-line react-hooks/exhaustive-deps
-
-  if (loading) return <Loading />
 
   return (
     <Page>

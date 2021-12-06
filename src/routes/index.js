@@ -1,13 +1,13 @@
 import { Routes, Route } from 'react-router-dom'
-import { OverviewPage } from 'routes/overview'
+import { OverviewRoute } from 'routes/overview'
 import BarChartIcon from '@material-ui/icons/BarChart'
-import { PatientsListPage, PatientPage } from 'routes/patients'
+import { PatientsListRoute, PatientRoute } from 'routes/patients'
 import PeopleIcon from '@material-ui/icons/People'
-import { DoctorsListPage } from 'routes/doctors'
+import { DoctorsListRoute } from 'routes/doctors'
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital'
 import { DepartmentsListRoute } from 'routes/departments'
 import HomeIcon from '@material-ui/icons/Home'
-/*import { SettingsPage } from 'routes/settings'
+/*import { SettingsRoute } from 'routes/settings'
 import SettingsIcon from '@material-ui/icons/Settings'*/
 import { ErrorPage } from 'pages/error'
 
@@ -17,21 +17,21 @@ const RouteList = [
     mainNavName: 'Overview',
     path: '/',
     exact: true,
-    element: OverviewPage,
+    element: OverviewRoute,
     icon: BarChartIcon,
   },
   {
     mainNavName: 'Doctors',
     path: '/doctors',
     exact: true,
-    element: DoctorsListPage,
+    element: DoctorsListRoute,
     icon: LocalHospitalIcon,
   },
   {
     mainNavName: 'Patients',
     path: '/patients',
     exact: true,
-    element: PatientsListPage,
+    element: PatientsListRoute,
     icon: PeopleIcon,
   },
   {
@@ -45,12 +45,12 @@ const RouteList = [
     mainNavName: 'Settings',
     path: '/settings',
     exact: true,
-    element: SettingsPage,
+    element: SettingsRoute,
     icon: SettingsIcon,
   },*/
   {
     path: 'patients/:patientId',
-    element: PatientPage,
+    element: PatientRoute,
   },
 ]
 
