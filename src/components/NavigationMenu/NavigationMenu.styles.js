@@ -12,11 +12,15 @@ const styles = ({ palette, spacing, breakpoints, shadows }) => ({
 
     [breakpoints.down('sm')]: {
       width: '100%',
-      position: 'absolute',
+      height: '4rem',
+      position: 'fixed',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      bottom: 0,
       zIndex: 100,
       borderRightWidth: 0,
-      borderBottom: '1px solid',
-      borderBottomColor: palette.divider,
+      borderTop: '1px solid',
+      borderTopColor: palette.divider,
       boxShadow: shadows[5],
     },
   },
@@ -27,10 +31,14 @@ const styles = ({ palette, spacing, breakpoints, shadows }) => ({
     alignItems: 'flex-start',
     paddingLeft: spacing(5),
 
-    '& > *:not(:first-child)': { marginTop: spacing(6) },
+    [breakpoints.up('sm')]: {
+      '& > *:not(:first-child)': { marginTop: spacing(6) },
+    },
 
     [breakpoints.down('sm')]: {
       alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'row',
     },
   },
   registerPatientButton: {

@@ -1,10 +1,10 @@
 import { useNavigate, useLocation } from 'react-router-dom'
 import { RouteList } from 'routes'
 import PropTypes from 'prop-types'
-import { Button } from '@material-ui/core'
+//import { Button } from '@material-ui/core'
+//import AddIcon from '@material-ui/icons/Add'
 import { withStyles } from '@material-ui/core/styles'
 import HelpIcon from '@material-ui/icons/Help'
-import AddIcon from '@material-ui/icons/Add'
 import NavigationButton from './NavigationButton'
 import styles from './NavigationMenu.styles'
 
@@ -19,9 +19,9 @@ function NavigationMenu({ classes }) {
 
   return (
     <div className={classes.root}>
-      <Button className={classes.registerPatientButton} endIcon={<AddIcon />}>
+      {/*<Button className={classes.registerPatientButton} endIcon={<AddIcon />}>
         Register Patient
-      </Button>
+      </Button>*/}
 
       <nav className={classes.routes}>
         {RouteList

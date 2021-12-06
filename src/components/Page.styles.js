@@ -1,12 +1,16 @@
-const styles = ({ palette }) => ({
+const styles = ({ palette, spacing, breakpoints }) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '2rem',
+    padding: spacing(8),
     backgroundColor: palette.background.main,
     flexGrow: 1,
     overflowY: 'auto',
+
+    [breakpoints.down('sm')]: {
+      marginBottom: spacing(16),
+    },
   },
 })
 

@@ -2,7 +2,7 @@ import { withStyles } from '@material-ui/core/styles'
 import { Button } from '@material-ui/core'
 
 
-const styles = ({ palette, spacing }) => ({
+const styles = ({ palette, spacing, breakpoints }) => ({
   root: {
     fontSize: '120%',
     backgroundColor: 'transparent!important',
@@ -29,11 +29,19 @@ const styles = ({ palette, spacing }) => ({
   },
   startIcon: {
     marginRight: spacing(6),
+
+    [breakpoints.down('sm')]: {
+      fontSize: '1.5rem',
+    },
   },
   label: {
     color: palette.text.primary,
     transition: '0.25s ease color',
     fontWeight: 'bold',
+
+    [breakpoints.down('sm')]: {
+      fontSize: 0,
+    },
   },
   /*text,
   textPrimary,
