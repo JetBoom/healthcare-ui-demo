@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import SimpleCardInfo from './SimpleCardInfo';
+import { render, screen } from '@testing-library/react'
+import SimpleCardInfo from './SimpleCardInfo'
 
 
 describe('<SimpleCardInfo>', () => {

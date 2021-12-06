@@ -11,7 +11,7 @@ ErrorPage.propTypes = {
 
 ErrorPage.defaultProps = {
   code: 404,
-};
+}
 
 /**
  * A generic error page to display when something goes wrong.

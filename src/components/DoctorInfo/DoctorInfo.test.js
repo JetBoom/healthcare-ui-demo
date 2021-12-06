@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import DoctorInfo from './DoctorInfo';
+import { render, screen } from '@testing-library/react'
+import DoctorInfo from './DoctorInfo'
 
 
 const doctor = {

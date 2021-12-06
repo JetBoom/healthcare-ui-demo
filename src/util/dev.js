@@ -3,7 +3,7 @@
  * @param  {number} ms         Milliseconds to sleep for
  * @return {Promise}     Gives a new promise that will resolve in {ms} time
  */
-export const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+export const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
 const requestHeaders = {
   headers : {

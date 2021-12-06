@@ -77,28 +77,28 @@ export const breakpoints = {
   portrait: '@media (orientation: portrait)',
   landscape: '@media (orientation: landscape)',
   get down() {
-    return (key) => `@media (max-width:${(this.values[key] || key) - 0.5}px)`;
+    return (key) => `@media (max-width:${(this.values[key] || key) - 0.5}px)`
   },
   get up() {
-    return (key) => `@media (min-width:${(this.values[key] || key) + 0.5}px)`;
+    return (key) => `@media (min-width:${(this.values[key] || key) + 0.5}px)`
   },
   get between() {
     return (keyA, keyB) =>
       `@media (min-width:${this.values[keyA] || keyA}px) and (max-width:${
         (this.values[keyB] || keyB) - 0.5
-      }px)`;
+      }px)`
   },
   get downHeight() {
-    return (key) => `@media (max-height:${(this.heightValues[key] || key) - 0.5}px)`;
+    return (key) => `@media (max-height:${(this.heightValues[key] || key) - 0.5}px)`
   },
   get upHeight() {
-    return (key) => `@media (min-height:${(this.heightValues[key] || key) + 0.5}px)`;
+    return (key) => `@media (min-height:${(this.heightValues[key] || key) + 0.5}px)`
   },
   get betweenHeight() {
     return (keyA, keyB) =>
       `@media (min-height:${this.heightValues[keyA] || keyA}px) and (max-height:${
         (this.heightValues[keyB] || keyB) - 0.5
-      }px)`;
+      }px)`
   },
 }
 
