@@ -28,7 +28,7 @@ export default function PatientPage({ patient }) {
         <InfoCard size="xl">
           <SimpleCardInfo
             data={`${patient.name} (${patient.age})`}
-            text="Name & Age"
+            text={patient.status}
             icon={<Avatar size="large" src={patient.avatarUrl} />}
             iconColor="transparent"
           />

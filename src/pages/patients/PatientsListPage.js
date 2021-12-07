@@ -45,6 +45,12 @@ export default function PatientsListPage({ patients }) {
       right: true,
     },
     {
+      name: 'Status',
+      selector: (row) => row.status,
+      sortable: true,
+      right: true,
+    },
+    {
       name: 'Department',
       selector: (row) => row.department,
       sortable: true,

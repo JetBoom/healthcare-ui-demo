@@ -14,24 +14,27 @@ export default function OverviewRoute() {
   const [patientsData, doctorsData, carData] = data
 
   const aggregateData = useMemo(() => {
-    if (loading) return {}
+    if (loading || error) return {}
 
     const demographics = { Male: 0, Female: 0 }
     const departments = {}
+    const statuses = {}
     let totalTreatmentCosts = 0
     for (let person of patientsData) {
       person.sex === 'Male' ? demographics.Male++ : demographics.Female++
       departments[person.department] = (departments[person.department] || 0) + 1
+      statuses[person.status] = (statuses[person.status] || 0) + 1
       totalTreatmentCosts += person.treatmentCosts
     }
 
     return {
       demographics,
       departments,
+      statuses,
       totalTreatmentCosts,
       avgTreatmentCost: totalTreatmentCosts / patientsData.length,
     }
-  }, [loading]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [loading, error]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (loading) return <Loading />
   if (error) return <ErrorPage code={502}>{error}</ErrorPage>
@@ -40,6 +43,7 @@ export default function OverviewRoute() {
     <OverviewPage
       demographics={aggregateData.demographics}
       departments={aggregateData.departments}
+      statuses={aggregateData.statuses}
       avgTreatmentCost={aggregateData.avgTreatmentCost}
       totalPatients={patientsData.length}
       totalDoctors={doctorsData.length}

@@ -5,6 +5,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 2100,
+    "status": "Inpatient",
     "age": 54
   },
   {
@@ -13,6 +14,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 2700,
+    "status": "Inpatient",
     "age": 52
   },
   {
@@ -21,6 +23,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 1500,
+    "status": "Inpatient",
     "age": 32
   },
   {
@@ -29,6 +32,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 800,
+    "status": "Inpatient",
     "age": 36
   },
   {
@@ -37,6 +41,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 900,
+    "status": "Inpatient",
     "age": 30
   },
   {
@@ -45,6 +50,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 500,
+    "status": "Inpatient",
     "age": 46
   },
   {
@@ -53,6 +59,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 56
   },
   {
@@ -61,6 +68,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 50
   },
   {
@@ -69,6 +77,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 4000,
+    "status": "Inpatient",
     "age": 20
   },
   {
@@ -77,6 +86,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 12000,
+    "status": "Inpatient",
     "age": 26
   },
   {
@@ -85,6 +95,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 44
   },
   {
@@ -93,6 +104,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 2500,
+    "status": "Outpatient",
     "age": 35
   },
   {
@@ -101,6 +113,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 32
   },
   {
@@ -109,6 +122,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 656,
+    "status": "Outpatient",
     "age": 25
   },
   {
@@ -117,6 +131,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 1440,
+    "status": "Inpatient",
     "age": 28
   },
   {
@@ -125,6 +140,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 55
   },
   {
@@ -133,6 +149,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 18
   },
   {
@@ -141,6 +158,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 2500,
+    "status": "Outpatient",
     "age": 57
   },
   {
@@ -149,6 +167,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 6540,
+    "status": "Inpatient",
     "age": 19
   },
   {
@@ -157,6 +176,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 7546,
+    "status": "Inpatient",
     "age": 18
   },
   {
@@ -165,6 +185,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 14342,
+    "status": "Inpatient",
     "age": 44
   },
   {
@@ -173,6 +194,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 1321,
+    "status": "Inpatient",
     "age": 46
   },
   {
@@ -181,6 +203,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 0,
+    "status": "Inpatient",
     "age": 24
   },
   {
@@ -189,6 +212,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 6465,
+    "status": "Outpatient",
     "age": 34
   },
   {
@@ -197,6 +221,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 1685,
+    "status": "Outpatient",
     "age": 54
   },
   {
@@ -205,6 +230,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 0,
+    "status": "Outpatient",
     "age": 54
   },
   {
@@ -213,6 +239,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 6456,
+    "status": "Inpatient",
     "age": 43
   },
   {
@@ -221,6 +248,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 1234,
+    "status": "Inpatient",
     "age": 33
   },
   {
@@ -229,6 +257,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 4232,
+    "status": "Outpatient",
     "age": 41
   },
   {
@@ -237,6 +266,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 1433,
+    "status": "Inpatient",
     "age": 25
   },
   {
@@ -245,6 +275,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 33
   },
   {
@@ -253,6 +284,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp6.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 43
   },
   {
@@ -261,6 +293,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 1233,
+    "status": "Inpatient",
     "age": 24
   },
   {
@@ -269,6 +302,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 7445,
+    "status": "Inpatient",
     "age": 31
   },
   {
@@ -277,6 +311,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 4324,
+    "status": "Outpatient",
     "age": 31
   },
   {
@@ -285,6 +320,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2313,
+    "status": "Inpatient",
     "age": 26
   },
   {
@@ -293,6 +329,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 5234,
+    "status": "Outpatient",
     "age": 42
   },
   {
@@ -301,6 +338,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
+    "status": "Outpatient",
     "age": 55
   },
   {
@@ -309,6 +347,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp1.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 44
   },
   {
@@ -317,6 +356,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 47
   },
   {
@@ -325,6 +365,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
+    "status": "Outpatient",
     "age": 26
   },
   {
@@ -333,6 +374,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 41
   },
   {
@@ -341,6 +383,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 18
   },
   {
@@ -349,6 +392,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
+    "status": "Outpatient",
     "age": 41
   },
   {
@@ -357,6 +401,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 2500,
+    "status": "Outpatient",
     "age": 57
   },
   {
@@ -365,6 +410,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp5.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 52
   },
   {
@@ -373,6 +419,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
+    "status": "Outpatient",
     "age": 27
   },
   {
@@ -381,6 +428,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 42
   },
   {
@@ -389,6 +437,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 33
   },
   {
@@ -397,6 +446,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 51
   },
   {
@@ -405,6 +455,7 @@
     "department": "Neurology",
     "avatarUrl": "/testcontent/pfp4.jpg",
     "treatmentCosts": 3412,
+    "status": "Outpatient",
     "age": 36
   },
   {
@@ -413,6 +464,7 @@
     "department": "Surgery",
     "avatarUrl": "/testcontent/pfp7.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 38
   },
   {
@@ -421,6 +473,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp2.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 33
   },
   {
@@ -429,6 +482,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
+    "status": "Outpatient",
     "age": 57
   },
   {
@@ -437,6 +491,7 @@
     "department": "Cardiology",
     "avatarUrl": "/testcontent/pfp3.jpg",
     "treatmentCosts": 2500,
+    "status": "Inpatient",
     "age": 31
   }
 ]

@@ -13,9 +13,11 @@ import SimpleCardInfo from 'components/SimpleCardInfo'
 
 
 OverviewPage.propTypes = {
-  /** Demographics object */
+  /** Demographics tally object */
   demographics: PropTypes.object.isRequired,
-  /** Departments object */
+  /** Status tally object */
+  statuses: PropTypes.object.isRequired,
+  /** Departments tally object */
   departments: PropTypes.object.isRequired,
   /** Average treatment cost of all patients. */
   avgTreatmentCost: PropTypes.number.isRequired,
@@ -31,6 +33,7 @@ OverviewPage.propTypes = {
 export default function OverviewPage(props) {
   const {
     demographics,
+    statuses,
     departments,
     avgTreatmentCost,
     totalPatients,
@@ -40,7 +43,7 @@ export default function OverviewPage(props) {
 
   const { palette } = useTheme()
 
-  const genderChartOptions = useMemo(() => ({
+  const demographicsChartOptions = useMemo(() => ({
     title: { text: undefined },
     chart: {
       height: 200,
@@ -102,6 +105,37 @@ export default function OverviewPage(props) {
     }
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
+  const statusChartOptions = useMemo(() => ({
+    title: { text: undefined },
+    chart: {
+      height: 200,
+      backgroundColor: 'transparent',
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        startAngle: -90,
+        endAngle: 90,
+        center: ['50%', '100%'],
+        size: '150%',
+        dataLabels: {
+          enabled: false,
+        },
+        showInLegend: true,
+      },
+    },
+    series: [{
+      type: 'pie',
+      innerSize: '50%',
+      name: 'Patients',
+      data: [
+        { y: statuses.Inpatient, name: 'Inpatient', color: palette.primary.main },
+        { y: statuses.Outpatient, name: 'Outpatient', color: palette.secondary.main }
+      ]
+    }]
+  }), [demographics]) // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
     <Page>
       <InfoCardGrid>
@@ -158,7 +192,17 @@ export default function OverviewPage(props) {
           </InfoCardHeader>
           <HighchartsReact
             highcharts={Highcharts}
-            options={genderChartOptions}
+            options={demographicsChartOptions}
+          />
+        </InfoCard>
+
+        <InfoCard size="sm">
+          <InfoCardHeader>
+            <InfoCardTitle>Patients by Status</InfoCardTitle>
+          </InfoCardHeader>
+          <HighchartsReact
+            highcharts={Highcharts}
+            options={statusChartOptions}
           />
         </InfoCard>
       </InfoCardGrid>
