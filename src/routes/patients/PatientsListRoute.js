@@ -1,32 +1,14 @@
-import { useState, useEffect } from 'react'
 import { PatientsListPage } from 'pages/patients'
 import Loading from 'components/Loading'
-import { GET } from 'util/dev'
+import { ErrorPage } from 'pages/error'
+import useData from 'hooks/useData'
 
 
 export default function PatientsListRoute() {
-  const [loading, setLoading] = useState(false)
-  const [patients, setPatients] = useState([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true)
-
-      try {
-        const patientsData = await GET('/testdata/patients.json', 'json')
-
-        setPatients(patientsData)
-
-        setLoading(false)
-      } catch (e) {
-        console.error(`Error fetching data: ${e}`)
-      }
-    }
-
-    fetchData()
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  const [patients, loading, error] = useData('/testdata/patients.json', [])
 
   if (loading) return <Loading />
+  if (error) return <ErrorPage code={502}>{error}</ErrorPage>
 
   return <PatientsListPage patients={patients} />
 }

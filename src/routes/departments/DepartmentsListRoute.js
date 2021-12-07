@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useMemo } from 'react'
 import { DepartmentsListPage } from 'pages/departments'
 import Loading from 'components/Loading'
-import { GET } from 'util/dev'
+import { ErrorPage } from 'pages/error'
+import useData from 'hooks/useData'
 
 
 function aggregateDepartmentData(patientsData, doctorsData) {
@@ -40,31 +41,17 @@ function aggregateDepartmentData(patientsData, doctorsData) {
 }
 
 export default function DepartmentsListRoute() {
-  const [loading, setLoading] = useState(true)
-  const [departments, setDepartments] = useState([])
+  const [data, loading, error] = useData([
+    '/testdata/patients.json',
+    '/testdata/doctors.json',
+  ])
+  const [patientsData, doctorsData] = data
 
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true)
-
-      try {
-        const [patientsData, doctorsData] = await Promise.all([
-          GET('/testdata/patients.json', 'json'),
-          GET('/testdata/doctors.json', 'json'),
-        ])
-
-        setDepartments(aggregateDepartmentData(patientsData, doctorsData))
-
-        setLoading(false)
-      } catch (e) {
-        console.error('Error fetching data', e)
-      }
-    }
-
-    fetchData()
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  const departments = useMemo(() => (patientsData && doctorsData) ? aggregateDepartmentData(patientsData, doctorsData) : null,
+    [loading]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (loading) return <Loading />
+  if (error) return <ErrorPage code={502}>{error}</ErrorPage>
 
   return <DepartmentsListPage departments={departments} />
 }

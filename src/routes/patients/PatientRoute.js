@@ -1,39 +1,18 @@
-import { useState, useEffect } from 'react'
-import { PatientPage } from 'pages/patients'
 import { useParams } from 'react-router-dom'
+import { PatientPage } from 'pages/patients'
 import Loading from 'components/Loading'
-import { GET } from 'util/dev'
+import { ErrorPage } from 'pages/error'
+import useData from 'hooks/useData'
 
 
 export default function PatientRoute() {
   const { patientId } = useParams()
-  const [loading, setLoading] = useState(true)
-  const [patient, setPatient] = useState({})
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true)
-
-      try {
-        const patientsData = await GET('/testdata/patients.json', 'json')
-
-        const patientData = patientsData[patientId]
-        if (!patientData) {
-          throw new Error('Patient not found')
-        }
-
-        setPatient(patientData)
-
-        setLoading(false)
-      } catch (e) {
-        console.error(`Error fetching data: ${e}`)
-      }
-    }
-
-    fetchData()
-  }, [patientId])
+  const [patients, loading, error] = useData('/testdata/patients.json', [])
 
   if (loading) return <Loading />
+  if (error) return <ErrorPage code={502}>{error}</ErrorPage>
+
+  const patient = patients[patientId]
 
   return <PatientPage patient={patient} />
 }
